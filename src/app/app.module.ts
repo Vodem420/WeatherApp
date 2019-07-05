@@ -5,8 +5,11 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
-import { WeatherItemComponent, WeatherListComponent, WeatherSearchComponent } from './weather/index';
+import { WeatherItemComponent, WeatherListComponent, WeatherSearchComponent } from './bodyn/weather/index';
 import { SideBarComponent } from './sidebar.component';
+import { HeaderComponent } from './header/header.component';
+import { BodynComponent } from './bodyn/bodyn.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -17,7 +20,10 @@ import { SideBarComponent } from './sidebar.component';
     WeatherItemComponent,
     WeatherListComponent,
     WeatherSearchComponent,
-    SideBarComponent],
+    SideBarComponent,
+    HeaderComponent,
+    BodynComponent,
+    FooterComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

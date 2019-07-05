@@ -26,6 +26,6 @@ export class Init {
   }
 }
 
-import { WeatherItem } from './weather/weatherInterface';
+import { WeatherItem } from './bodyn/weather/weatherInterface';
 
 export const WEATHER_ITEMS: WeatherItem[] = [];

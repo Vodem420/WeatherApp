@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Init } from '../init-weather';
+// import { Init } from '../init-weather';
+import { Init } from 'src/app/init-weather';
 import 'rxjs/add/observable/of';
 import { Observable } from 'rxjs/Observable';
 import { HttpClient } from '@angular/common/http';
 import { WeatherItem } from '../weather/weatherInterface';
-import { WEATHER_ITEMS } from '../init-weather';
+// import { WEATHER_ITEMS } from '../init-weather';
+import { WEATHER_ITEMS } from 'src/app/init-weather';
 import 'rxjs';
 
 @Injectable()

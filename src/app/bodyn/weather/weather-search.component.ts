@@ -23,7 +23,7 @@ import 'rxjs/add/operator/catch';
       </form>
     </section>
   `,
-  styleUrls: ['../../assets/css/weather-search.css'],
+  styleUrls: ['../../../assets/css/weather-search.css'],
   providers: [WeatherItemsService]
 })
 

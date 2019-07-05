@@ -1,0 +1,39 @@
+body{
+    padding: 10px 15px;
+    display: inline-block;
+    width: 100%;
+}
+.signIn{
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 2px solid aqua;
+    background: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    color: aqua;
+    margin-right: 20px;
+    float: right;
+
+}
+.signIn:hover{
+    transition: 400ms ease;
+    color: gold;
+    border:  2px solid gold;
+}
+.signUp{
+    cursor: pointer;
+    padding: 10px 20px;
+    border: 2px solid aqua;
+    background: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    color: aqua;
+    margin-right: 20px;
+    float: right;
+
+}
+.signUp:hover{
+    transition: 400ms ease;
+    color: gold;
+    border:  2px solid gold;
+}

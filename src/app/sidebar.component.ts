@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Profile } from './profile/profile';
-import { ProfileService, WeatherItemsService } from './services/index';
-import { WeatherItem } from './weather/weatherInterface';
+import { Profile } from './bodyn/profile/profile';
+import { ProfileService, WeatherItemsService } from './bodyn/services/index';
+import { WeatherItem } from './bodyn/weather/weatherInterface';
 
 @Component({
   selector: 'app-sidebar',
