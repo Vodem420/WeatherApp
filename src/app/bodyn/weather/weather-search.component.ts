@@ -17,7 +17,7 @@ import 'rxjs/add/operator/catch';
       <form class="weatherForm" [formGroup]="locationGroup" novalidate>
         <!--<label for="city">City</label>-->
         <input class="weatherInput" #location formControlName="location" placeholder="Enter City Name..." type="text" id="city" name="city"
-               (input)="onSearchLocation($event, location.value)" [required]="true"/>
+               (input)="onSearchLocation($event, location.value)" [required]="true" autocomplete="off"/>
         <button class="weatherAdd" type="submit" (click)="onSubmit(e, locationGroup)">Add City</button>
         <button class="weatherDel" type="button" (click)="clearWeatherData()">Clear</button>
       </form>
