@@ -1,0 +1,42 @@
+.container{
+    margin-top: 250px;
+}
+.content{
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+}
+.Title{
+    padding: 50px 165px;
+    display: inline-block;
+    font-size: 2em;
+}
+.line{border: 1px solid lightgray;}
+
+.formControl{
+    outline: none;
+    font-size: 1.5em;
+    display: block;
+    width: 60%;
+    border: none;
+    margin: 20px auto;
+    border-radius: 20px;
+    background: lightgray;
+    padding: 15px 0 15px 10px;
+}
+.buttonContent{
+    padding: 5px 0;
+}
+.confirmButton{
+    outline: none;
+    font-size: 1.5em;
+    display: block;
+    border: none;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 15px 30px 15px 30px;
+    background: aqua;
+
+}

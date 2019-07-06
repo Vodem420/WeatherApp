@@ -1,0 +1,16 @@
+.container{
+    margin-top: 250px;
+}
+.content{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.title{
+    font-size: 6em;
+    color: coral;
+}
+.Houston{
+    font-size: 2em;
+    color: #3498db;
+}
