@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormGroup, FormControl} from '@angular/forms';
-import {WeatherItemsService} from '../services/weather-items.service';
-import {WeatherItem} from './weatherInterface';
+import {WeatherItemsService} from '../../services/weather-items.service';
+import {WeatherItem} from '../weatherInterface';
 // import {WeatherItem} from './weatherInterface';
 import {Subject} from 'rxjs';
 import 'rxjs/add/operator/debounceTime';
@@ -23,7 +23,7 @@ import 'rxjs/add/operator/catch';
       </form>
     </section>
   `,
-  styleUrls: ['../../../assets/css/weather-search.css'],
+  styleUrls: ['./weather-search.css'],
   providers: [WeatherItemsService]
 })
 

@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { WeatherItem } from './weatherInterface';
+import { WeatherItem } from '../weatherInterface';
 // import { WeatherItem } from './weatherInterface';
 
 @Component({

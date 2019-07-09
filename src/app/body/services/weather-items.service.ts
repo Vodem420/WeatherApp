@@ -10,7 +10,7 @@ import { WEATHER_ITEMS } from 'src/app/init-weather';
 import 'rxjs';
 
 @Injectable()
-export class WeatherItemsService extends Init {
+export class WeatherItemsService extends Init{
   private APPID: string;
   private API_URL: string;
 
@@ -41,13 +41,5 @@ export class WeatherItemsService extends Init {
 
   searchWeatherData(cityName: string): Observable<any> {
     return this._http.get(this.API_URL + cityName + '&APPID=' + this.APPID + '&units=metric');
-      /*.map(response => {
-        return response.json();
-      })*/
-      /*.catch(error => {
-        console.log(error);
-        return Observable.throw(error.json());
-      });*/
-
   }
 }
