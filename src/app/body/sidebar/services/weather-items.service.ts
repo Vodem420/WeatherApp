@@ -4,7 +4,7 @@ import { Init } from 'src/app/init-weather';
 import 'rxjs/add/observable/of';
 import { Observable } from 'rxjs/Observable';
 import { HttpClient } from '@angular/common/http';
-import { WeatherItem } from '../weather/weatherInterface';
+import { WeatherItem } from '../../weather/weatherInterface';
 // import { WEATHER_ITEMS } from '../init-weather';
 import { WEATHER_ITEMS } from 'src/app/init-weather';
 import 'rxjs';
@@ -21,12 +21,6 @@ export class WeatherItemsService extends Init{
     this.APPID = '2e7e1d8fabd7c153330e11d1f13782d9';
     this.API_URL = 'https://api.openweathermap.org/data/2.5/weather?q=';
   }
-
-  public getWeatherItems() {
-    const WeatherItems = JSON.parse(localStorage.getItem('weather-items'));
-    return WeatherItem;
-  }
-
   public getWeatherItem() {
     return WEATHER_ITEMS;
   }

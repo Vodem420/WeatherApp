@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormGroup, FormControl} from '@angular/forms';
-import {WeatherItemsService} from '../../services/weather-items.service';
+import {WeatherItemsService} from '../../sidebar/services/weather-items.service';
 import {WeatherItem} from '../weatherInterface';
 // import {WeatherItem} from './weatherInterface';
 import {Subject} from 'rxjs';
