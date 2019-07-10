@@ -8,14 +8,17 @@ import { WeatherItem } from '../weather/weatherInterface';
   template: `
     <div class="sideContent">
   <h2>Saved Profiles</h2>
-    <button (click) = "onSaveNew()">Save list to Profile</button>
+        <div class="line"></div>
+    <button class="save" (click) = "onSaveNew()">Save list to Profile</button>
+        <div class="profiles">
     <article class="profile" *ngFor="let profile of profiles">
     <div  (click) = "onLoadProfile(profile)">
         <h4>{{profile.profileName}}</h4>
         <p>{{profile.cities.join(', ')}} </p>
     </div>
-      <span class="delete" (click)="onDeleteProfile($event,profile)">X</span>
+      <button class="delete" (click)="onDeleteProfile($event,profile)">X</button>
     </article>
+        </div>
     </div>
   `,
   styleUrls: ['./sidebar.css'],

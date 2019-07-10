@@ -1,20 +1,28 @@
 .container{
-    margin-top: 250px;
-}
-.content{
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 700px;
+    margin: 200px auto;
+    border-radius: 10px;
+    background: #fff;
     text-align: center;
 }
-.title{
-    font-size: 6em;
-    color: coral;
-}
+.content{margin: 0 auto;text-align: center;}
+.title{font-size: 6em;color: coral;}
 .Houston{
     font-size: 2em;
     color: #3498db;
 }
+.back{
+    padding-bottom: 20px;
+}
 .backToMain{
     font-size: 2em;
-    color: gold;
+    color: black;
+    text-decoration: underline;
+}
+.backToMain:hover{
+    transition: 400ms ease;
+    color: lime;
+}
+@media only screen and (min-width : 480px) and (max-width: 767px) {
+    .container{max-width: 450px;}
 }

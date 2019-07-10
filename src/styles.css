@@ -1,7 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
 body{
   margin: 0;
   padding: 0;
-  background-color: #1D1B26;
+  background-image: url("https://i.imgur.com/2qyZ7FI.gif")  ;
+  background-size: cover;
+  background-attachment: fixed;
 }
-h1{margin: 0;}
+
+@media only screen and (min-width : 480px) and (max-width: 767px) {
+  body:after{background: red !important;width: 120px;height: 20px;content: "480px - 767px";position: fixed;top: 0;z-index: 100500}
+}
+@media only screen and (min-width : 768px) and (max-width: 991px) {
+  body:after{background: olivedrab !important;width: 120px;height: 20px;content: "768px - 1200px";position: fixed;top: 0;left: 0;z-index: 100500}
+}
+@media only screen and (min-width : 992px) and (max-width: 1199px) {
+  body:after{background: olivedrab !important;width: 120px;height: 20px;content: "992px - 1199px";position: fixed;top: 0;left: 0;z-index: 100500}
+}
+@media only screen  and (min-width: 1200px){
+  body:after{background: olivedrab !important;width: 120px;height: 20px;content: "+1200px";position: fixed;top: 0;right: 0;z-index: 100500}
+}

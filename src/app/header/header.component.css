@@ -1,37 +1,23 @@
-body{
+.bodyn{
     display: inline-block;
     width: 100%;
+    background-color: #1D1B26;
+    font-style: italic;
 }
-.signIn{
+.sign{
+    text-decoration: none;
     cursor: pointer;
     padding: 10px 20px;
-    border: 2px solid aqua;
     background: none;
-    border-radius: 5px;
     font-size: 1.5em;
     color: aqua;
     float: right;
-
 }
-.signIn:hover{
+
+.sign:hover{
     transition: 400ms ease;
     color: gold;
-    border:  2px solid gold;
+    text-decoration: underline;
 }
-.signUp{
-    cursor: pointer;
-    padding: 10px 20px;
-    border: 2px solid aqua;
-    background: none;
-    border-radius: 5px;
-    font-size: 1.5em;
-    color: aqua;
-    margin-right: 20px;
-    float: right;
 
-}
-.signUp:hover{
-    transition: 400ms ease;
-    color: gold;
-    border:  2px solid gold;
-}
+/**/

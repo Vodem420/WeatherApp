@@ -1,61 +1,45 @@
-.weatherForm{
+.weather-search {text-align: center;}
 
+.weatherForm{
+  max-width: 600px;
+  min-height: 250px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #fff;
 }
 
 .weatherInput{
-  padding: 10px 25px 10px 25px;
-  font-size: 2em;
+  font-style: italic;
+  outline: none;
+  font-size: 1.5em;
+  width: 80%;
   border: none;
-  border-radius: 5px;
-  background: none;
-  border: 2px solid lawngreen;
-  border-radius: 5px;
-  color: lawngreen;
+  margin: 40px auto;
+  border-radius: 20px;
+  background: lightgray;
+  padding: 15px 0 15px 10px;
 }
 
-.weatherAdd{
+.weatherButton{
+  font-style: italic;
   text-decoration: none;
   outline: none;
   font-size: 2em;
   background: none;
   cursor: pointer;
   padding: 10px 30px;
-  margin: 10px 20px;
+  margin: 20px 20px;
   position: relative;
-  border: 2px solid lawngreen;
   border-radius: 5px;
-  color: lawngreen;
+  color: black;
+  border: 1px solid black;
 }
-.weatherAdd:hover{
-  border: 2px solid gold;
-  color: gold;
-  transition: 400ms ease;
+.add:hover{
+  transition: 200ms ease;
+  text-decoration: underline;
 }
-
-.weatherDel{
-  text-decoration: none;
-  outline: none;
-  font-size: 2em;
-  background: none;
-  cursor: pointer;
-  padding: 10px 30px;
-  margin: 10px 20px;
-  position: relative;
-  border: 2px solid lawngreen;
-  border-radius: 5px;
-  color: lawngreen;
+.del:hover{
+  transition: 200ms ease;
+  text-decoration: underline;
 }
-
-.weatherDel:hover{
-  border: 2px solid gold;
-  color: gold;
-  transition: 400ms ease;
-}
-
-.weather-search {
-  text-align: center;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 1em;
- }
 
