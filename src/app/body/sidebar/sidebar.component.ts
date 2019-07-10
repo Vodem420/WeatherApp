@@ -20,6 +20,25 @@ import { WeatherItem } from '../weather/weatherInterface';
     </article>
         </div>
     </div>
+      <div class="profiles">
+          <div class="buttonContent">
+              <button class="displayProfiles">Show Profiles</button>
+              <div class="hideContent">
+                  <h2>Saved Profiles</h2>
+                  <div class="line"></div>
+                  <button class="save" (click) = "onSaveNew()">Save list to Profile</button>
+                  <div class="profiles">
+                      <article class="profile" *ngFor="let profile of profiles">
+                          <div  (click) = "onLoadProfile(profile)">
+                              <h4>{{profile.profileName}}</h4>
+                              <p>{{profile.cities.join(', ')}} </p>
+                          </div>
+                          <button class="delete" (click)="onDeleteProfile($event,profile)">X</button>
+                      </article>
+                  </div>
+              </div>
+          </div>
+      </div>
   `,
   styleUrls: ['./sidebar.css'],
   providers: [ProfileService, WeatherItemsService]

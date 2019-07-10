@@ -70,3 +70,45 @@ transition: 400ms ease;
 transform: rotate(1turn);
 }
 
+@media only screen and (min-width : 480px) and (max-width: 1400px) {
+ .sideContent{display: none;}
+}
+@media only screen and (min-width: 1401px) {
+  .displayProfiles{display: none;}
+}
+
+.displayProfiles{
+  border: none;
+  outline: none;
+  font-style: italic;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  background: none;
+  font-size: 1.5em;
+  color: aqua;
+  float: right;
+  position: absolute;
+  top: 0;
+  left: 1%;
+}
+
+.hideContent{
+  display: none;
+}
+.displayProfiles:focus ~ .hideContent,
+.displayProfiles:active ~ .hideContent,
+.hideContent:hover{
+  position: absolute;
+  top: 3%;
+  left: 0;
+  font-style: italic;
+  max-width: 400px;
+  border-radius: 10px;
+  border: 2px solid aqua;
+  background: #CCCCCC;
+  margin-top: 50px;
+  text-align: center;
+  display: block;
+}
+
