@@ -18,7 +18,7 @@ import { FormBuilder } from '@angular/forms';
                 <input type="password" class="formControl" placeholder="Password" formControlName="Password">
             </form>
             <div class="buttonContent">
-                <button class="confirmButton" type="submit">Confirm</button>
+                <button class="confirmButton" type="submit" (click)="callServerForSignIn()">Confirm</button>
             </div>
         </div>
         </div>
