@@ -19,7 +19,7 @@ import { FormBuilder } from '@angular/forms';
                     <input type="password" class="formControl"  formControlName="Password" placeholder="Password">
                 </form>
                 <div class="buttonContent">
-                    <button class="confirmButton" type="submit" (click)="callServerForSignUp()">Confirm</button>
+                    <button class="confirmButton" type="submit" (click)="callServerForSignUp(checkoutForm.value)">Confirm</button>
                 </div>
             </div>
         </div>
@@ -40,9 +40,9 @@ export class SignUpComponent implements OnInit {
       });
   }
 
-    callServerForSignUp() {
-        console.log('test');
-        this.serviceService.callServerForSignUp();
+    callServerForSignUp(data) {
+        console.log('data: ', data);
+        this.serviceService.callServerForSignUp(data);
     }
 
   ngOnInit() {}

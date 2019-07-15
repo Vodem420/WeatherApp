@@ -13,12 +13,12 @@ import { FormBuilder } from '@angular/forms';
             <div class="line"></div>
             </div>
         <div class="formContent">
-            <form action="" class="Form" [formGroup]="checkoutForm" (ngSubmit)="callServerForSignIn()">
+            <form action="" class="Form" [formGroup]="checkoutForm">
                 <input type="email" class="formControl" placeholder="E-mail" formControlName="EmailAddress">
                 <input type="password" class="formControl" placeholder="Password" formControlName="Password">
             </form>
             <div class="buttonContent">
-                <button class="confirmButton" type="submit" (click)="callServerForSignIn()">Confirm</button>
+                <button class="confirmButton" type="submit" (click)="callServerForSignIn(checkoutForm.value)">Confirm</button>
             </div>
         </div>
         </div>
@@ -31,18 +31,17 @@ export class SignInComponent implements OnInit {
   constructor(private serviceService: ServiceService,
               private formBuilder: FormBuilder, ) {
       this.checkoutForm = this.formBuilder.group({
-          nickname: '',
           EmailAddress: '',
           Password: '',
       });
   }
 
-  ngOnInit() {
-  }
+    callServerForSignIn(data) {
+        console.log('data: ', data);
+        this.serviceService.callServerForSignIn(data);
+    }
 
-    callServerForSignIn() {
-        console.log('test');
-        this.serviceService.callServerForSignIn();
+    ngOnInit() {
     }
 
 }

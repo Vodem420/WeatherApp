@@ -5,7 +5,7 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
     providedIn: 'root'
 })
 export class ServiceService {
-    user = {id: 1, name: 'Hello'};
+    // user = {id: 1, name: 'Hello'};
 
     constructor(private http: HttpClient) {
     }
@@ -15,9 +15,10 @@ export class ServiceService {
             .set('Content-Type', 'application/json');
     }
 
-    callServerForSignIn() {
+    callServerForSignIn(userData) {
+        console.log('callServerForSignIn data: ', userData);
         const headers = this.getHeaders();
-        this.http.post('http://127.0.0.1:3000/login', JSON.stringify(this.user), {
+        this.http.post('http://127.0.0.1:3000/login', JSON.stringify(userData), {
             headers: headers
         })
             .subscribe(data => {
@@ -25,12 +26,12 @@ export class ServiceService {
             });
     }
 
-    callServerForSignUp() {
-        console.log('callServerForSignUp');
+    callServerForSignUp(userData) {
+        console.log('callServerForSignUp data: ', userData);
         const headers = this.getHeaders();
 
-        this.http.post('http://127.0.0.1:3000/register', JSON.stringify(this.user), {
-            headers: headers
+        this.http.post('http://127.0.0.1:3000/register', JSON.stringify(userData), {
+        headers: headers
         })
             .subscribe(data => {
                 console.log(data);
