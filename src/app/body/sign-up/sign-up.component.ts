@@ -19,7 +19,8 @@ import { FormBuilder } from '@angular/forms';
                     <input type="password" class="formControl"  formControlName="Password" placeholder="Password">
                 </form>
                 <div class="buttonContent">
-                    <button class="confirmButton" type="submit" (click)="callServerForSignUp(checkoutForm.value)">Confirm</button>
+                    <button routerLink="/userPage"
+                            class="confirmButton" type="submit" (click)="callServerForSignUp(checkoutForm.value)">Confirm</button>
                 </div>
             </div>
         </div>

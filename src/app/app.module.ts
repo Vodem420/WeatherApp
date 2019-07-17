@@ -22,6 +22,7 @@ import { SignUpComponent } from './body/sign-up/sign-up.component';
 import { HomeComponent } from './body/mainPage/home.component';
 import { NotFound404Component } from './body/not-found404/not-found404.component';
 import { AboutComponent } from './body/about/about.component';
+import { UserPageComponent } from './body/user-page/user-page.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, ReactiveFormsModule, HttpClientModule, AppRoutingModule],
@@ -39,6 +40,7 @@ import { AboutComponent } from './body/about/about.component';
     HomeComponent,
     NotFound404Component,
     AboutComponent,
+    UserPageComponent,
    ],
   providers: [],
   bootstrap: [AppComponent]

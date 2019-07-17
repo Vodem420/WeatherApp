@@ -1,0 +1,33 @@
+.container{
+    margin-top: 150px;
+}
+.content{
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+}
+h1{
+    font-size: 2em;
+    font-style: italic;
+}
+
+.logout{
+    margin-bottom: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: none;
+    font-size: 1.5em;
+    color: aqua;
+    border: 2px solid aqua;
+    border-radius: 5px;
+}
+
+.logout:hover{
+    transition: 400ms ease;
+    color: gold;
+    border: 2px solid gold;
+    text-decoration: underline;
+}
