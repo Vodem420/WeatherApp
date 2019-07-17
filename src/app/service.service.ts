@@ -18,7 +18,7 @@ export class ServiceService {
     callServerForSignIn(userData) {
         console.log('callServerForSignIn data: ', userData);
         const headers = this.getHeaders();
-        this.http.post('http://127.0.0.1:3000/login', JSON.stringify(userData), {
+        this.http.post('http://127.0.0.1:3000/api/login', JSON.stringify(userData), {
             headers: headers
         })
             .subscribe(data => {
@@ -30,7 +30,7 @@ export class ServiceService {
         console.log('callServerForSignUp data: ', userData);
         const headers = this.getHeaders();
 
-        this.http.post('http://127.0.0.1:3000/register', JSON.stringify(userData), {
+        this.http.post('http://127.0.0.1:3000/api/register', JSON.stringify(userData), {
         headers: headers
         })
             .subscribe(data => {

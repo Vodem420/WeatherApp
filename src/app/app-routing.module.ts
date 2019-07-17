@@ -7,11 +7,11 @@ import {HomeComponent} from './body/mainPage/home.component';
 import { AboutComponent } from './body/about/about.component';
 
 const routes: Routes = [
-    { path: 'login', component: SignInComponent},
-    { path: 'register', component: SignUpComponent},
-    { path: 'about', component: AboutComponent},
-    { path: '', component: HomeComponent},
-    { path: '**', component: NotFound404Component},
+    { path: 'login', pathMatch: 'full', component: SignInComponent},
+    { path: 'register', pathMatch: 'full', component: SignUpComponent},
+    { path: 'about', pathMatch: 'full', component: AboutComponent},
+    { path: '', pathMatch: 'full', component: HomeComponent},
+    { path: '**', pathMatch: 'full', component: NotFound404Component},
 ];
 
 @NgModule({
