@@ -34,7 +34,7 @@ export class ServiceService {
         headers: headers
         })
             .subscribe(data => {
-                console.log(data);
+                console.log("data needs be here", data);
             });
     }
 }

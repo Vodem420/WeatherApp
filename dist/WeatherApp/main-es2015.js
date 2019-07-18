@@ -100,6 +100,17 @@ module.exports = ""
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/body/user-page/user-page.component.html":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/body/user-page/user-page.component.html ***!
+  \***********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>user-page works!</p>\n"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/footer/footer.component.html":
 /*!************************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/footer/footer.component.html ***!
@@ -118,7 +129,56 @@ module.exports = "<p>footer works!</p>\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<div class=\"bodyn\">\n\n\n    <a\n\n        routerLink=\"/login\" routerLinkActive=\"active\" class=\"sign\">Sign In</a>\n\n    <a\n\n        routerLink=\"/register\" routerLinkActive=\"active\" class=\"sign\">Sign Up</a>\n\n    <a\n\n        routerLink=\"/about\" routerLinkActive=\"active\" class=\"sign\">About</a>\n</div>\n    <router-outlet></router-outlet>\n"
+module.exports = "\n<div class=\"bodyn\">\n\n    <a\n\n        routerLink=\"/login\" routerLinkActive=\"active\" class=\"sign\">Sign In</a>\n\n    <a\n\n        routerLink=\"/register\" routerLinkActive=\"active\" class=\"sign\">Sign Up</a>\n\n    <a\n\n        routerLink=\"/about\" routerLinkActive=\"active\" class=\"sign\">About</a>\n</div>\n    <router-outlet></router-outlet>\n"
+
+/***/ }),
+
+/***/ "./src/app/app-routing.module.ts":
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/*! exports provided: AppRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _body_not_found404_not_found404_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./body/not-found404/not-found404.component */ "./src/app/body/not-found404/not-found404.component.ts");
+/* harmony import */ var _body_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./body/sign-up/sign-up.component */ "./src/app/body/sign-up/sign-up.component.ts");
+/* harmony import */ var _body_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./body/sign-in/sign-in.component */ "./src/app/body/sign-in/sign-in.component.ts");
+/* harmony import */ var _body_mainPage_home_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./body/mainPage/home.component */ "./src/app/body/mainPage/home.component.ts");
+/* harmony import */ var _body_about_about_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./body/about/about.component */ "./src/app/body/about/about.component.ts");
+/* harmony import */ var _body_user_page_user_page_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./body/user-page/user-page.component */ "./src/app/body/user-page/user-page.component.ts");
+
+
+
+
+
+
+
+
+
+const routes = [
+    { path: 'login', pathMatch: 'full', component: _body_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_5__["SignInComponent"] },
+    { path: 'register', pathMatch: 'full', component: _body_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_4__["SignUpComponent"] },
+    { path: 'about', pathMatch: 'full', component: _body_about_about_component__WEBPACK_IMPORTED_MODULE_7__["AboutComponent"] },
+    { path: 'userPage', pathMatch: 'full', component: _body_user_page_user_page_component__WEBPACK_IMPORTED_MODULE_8__["UserPageComponent"] },
+    { path: '', pathMatch: 'full', component: _body_mainPage_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"] },
+    { path: '**', pathMatch: 'full', component: _body_not_found404_not_found404_component__WEBPACK_IMPORTED_MODULE_3__["NotFound404Component"] },
+];
+let AppRoutingModule = class AppRoutingModule {
+};
+AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+    })
+], AppRoutingModule);
+
+
 
 /***/ }),
 
@@ -180,19 +240,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _body_weather_weather_item_weather_item_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./body/weather/weather-item/weather-item.component */ "./src/app/body/weather/weather-item/weather-item.component.ts");
-/* harmony import */ var _body_weather_weather_list_weather_list_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./body/weather/weather-list/weather-list.component */ "./src/app/body/weather/weather-list/weather-list.component.ts");
-/* harmony import */ var _body_weather_weather_search_weather_search_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./body/weather/weather-search/weather-search.component */ "./src/app/body/weather/weather-search/weather-search.component.ts");
-/* harmony import */ var _body_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./body/sidebar/sidebar.component */ "./src/app/body/sidebar/sidebar.component.ts");
-/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
-/* harmony import */ var _body_bodyn_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./body/bodyn.component */ "./src/app/body/bodyn.component.ts");
-/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _body_weather_weather_item_weather_item_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./body/weather/weather-item/weather-item.component */ "./src/app/body/weather/weather-item/weather-item.component.ts");
+/* harmony import */ var _body_weather_weather_list_weather_list_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./body/weather/weather-list/weather-list.component */ "./src/app/body/weather/weather-list/weather-list.component.ts");
+/* harmony import */ var _body_weather_weather_search_weather_search_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./body/weather/weather-search/weather-search.component */ "./src/app/body/weather/weather-search/weather-search.component.ts");
+/* harmony import */ var _body_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./body/sidebar/sidebar.component */ "./src/app/body/sidebar/sidebar.component.ts");
+/* harmony import */ var _header_header_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./header/header.component */ "./src/app/header/header.component.ts");
+/* harmony import */ var _body_bodyn_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./body/bodyn.component */ "./src/app/body/bodyn.component.ts");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
 /* harmony import */ var _body_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./body/sign-in/sign-in.component */ "./src/app/body/sign-in/sign-in.component.ts");
 /* harmony import */ var _body_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./body/sign-up/sign-up.component */ "./src/app/body/sign-up/sign-up.component.ts");
 /* harmony import */ var _body_mainPage_home_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./body/mainPage/home.component */ "./src/app/body/mainPage/home.component.ts");
 /* harmony import */ var _body_not_found404_not_found404_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./body/not-found404/not-found404.component */ "./src/app/body/not-found404/not-found404.component.ts");
 /* harmony import */ var _body_about_about_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./body/about/about.component */ "./src/app/body/about/about.component.ts");
+/* harmony import */ var _body_user_page_user_page_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./body/user-page/user-page.component */ "./src/app/body/user-page/user-page.component.ts");
+
 
 
 
@@ -214,32 +276,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const routes = [
-    { path: 'login', component: _body_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_14__["SignInComponent"] },
-    { path: 'register', component: _body_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_15__["SignUpComponent"] },
-    { path: 'about', component: _body_about_about_component__WEBPACK_IMPORTED_MODULE_18__["AboutComponent"] },
-    { path: '', component: _body_mainPage_home_component__WEBPACK_IMPORTED_MODULE_16__["HomeComponent"] },
-    { path: '**', component: _body_not_found404_not_found404_component__WEBPACK_IMPORTED_MODULE_17__["NotFound404Component"] },
-];
 let AppModule = class AppModule {
 };
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _angular_router__WEBPACK_IMPORTED_MODULE_13__["RouterModule"].forRoot(routes),],
+        imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormsModule"], _angular_forms__WEBPACK_IMPORTED_MODULE_3__["ReactiveFormsModule"], _angular_common_http__WEBPACK_IMPORTED_MODULE_4__["HttpClientModule"], _app_routing_module__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"]],
         declarations: [
             _app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"],
-            _body_weather_weather_item_weather_item_component__WEBPACK_IMPORTED_MODULE_6__["WeatherItemComponent"],
-            _body_weather_weather_list_weather_list_component__WEBPACK_IMPORTED_MODULE_7__["WeatherListComponent"],
-            _body_weather_weather_search_weather_search_component__WEBPACK_IMPORTED_MODULE_8__["WeatherSearchComponent"],
-            _body_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_9__["SideBarComponent"],
-            _header_header_component__WEBPACK_IMPORTED_MODULE_10__["HeaderComponent"],
-            _body_bodyn_component__WEBPACK_IMPORTED_MODULE_11__["BodynComponent"],
-            _footer_footer_component__WEBPACK_IMPORTED_MODULE_12__["FooterComponent"],
+            _body_weather_weather_item_weather_item_component__WEBPACK_IMPORTED_MODULE_7__["WeatherItemComponent"],
+            _body_weather_weather_list_weather_list_component__WEBPACK_IMPORTED_MODULE_8__["WeatherListComponent"],
+            _body_weather_weather_search_weather_search_component__WEBPACK_IMPORTED_MODULE_9__["WeatherSearchComponent"],
+            _body_sidebar_sidebar_component__WEBPACK_IMPORTED_MODULE_10__["SideBarComponent"],
+            _header_header_component__WEBPACK_IMPORTED_MODULE_11__["HeaderComponent"],
+            _body_bodyn_component__WEBPACK_IMPORTED_MODULE_12__["BodynComponent"],
+            _footer_footer_component__WEBPACK_IMPORTED_MODULE_13__["FooterComponent"],
             _body_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_14__["SignInComponent"],
             _body_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_15__["SignUpComponent"],
             _body_mainPage_home_component__WEBPACK_IMPORTED_MODULE_16__["HomeComponent"],
             _body_not_found404_not_found404_component__WEBPACK_IMPORTED_MODULE_17__["NotFound404Component"],
             _body_about_about_component__WEBPACK_IMPORTED_MODULE_18__["AboutComponent"],
+            _body_user_page_user_page_component__WEBPACK_IMPORTED_MODULE_19__["UserPageComponent"],
         ],
         providers: [],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_5__["AppComponent"]]
@@ -653,6 +709,25 @@ SideBarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     </article>
         </div>
     </div>
+      <div class="profiles">
+          <div class="buttonContent">
+              <button class="displayProfiles">Show Profiles</button>
+              <div class="hideContent">
+                  <h2>Saved Profiles</h2>
+                  <div class="line"></div>
+                  <button class="save" (click) = "onSaveNew()">Save list to Profile</button>
+                  <div class="profiles">
+                      <article class="profile" *ngFor="let profile of profiles">
+                          <div  (click) = "onLoadProfile(profile)">
+                              <h4>{{profile.profileName}}</h4>
+                              <p>{{profile.cities.join(', ')}} </p>
+                          </div>
+                          <button class="delete" (click)="onDeleteProfile($event,profile)">X</button>
+                      </article>
+                  </div>
+              </div>
+          </div>
+      </div>
   `,
         providers: [_services_index__WEBPACK_IMPORTED_MODULE_2__["ProfileService"], _services_index__WEBPACK_IMPORTED_MODULE_2__["WeatherItemsService"]],
         styles: [__webpack_require__(/*! ./sidebar.css */ "./src/app/body/sidebar/sidebar.css")]
@@ -670,7 +745,7 @@ SideBarComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".sideContent{\n  font-style: italic;\n  max-width: 400px;\n  border-radius: 10px;\n  background: #fff;\n  margin-top: 50px;\n  text-align: center;\n}\n\n.sideContent h2 {\n  padding: 10px 0 0 0;\n  font-size: 2em;\n  color: black;\n}\n\n.line{border: 1px solid lightgray;}\n\n.save{\n  margin-top: 15px;\n  font-style: italic;\n  outline: none;\n  font-size: 1.5em;\n  background: none;\n  cursor: pointer;\n  padding: 10px 30px;\n  border: 2px solid black;\n  border-radius: 5px;\n  color: black;\n}\n\n.save:hover{\n  transition: 400ms ease;\n  text-decoration: underline;\n  color: black;\n\n}\n\n.profiles{\n  padding-bottom: 5px;\n}\n\n.profile {\n  position: relative;\n  margin: 10px 5px;\n  cursor: pointer;\n  font-size: 1.5em;\n  border-radius: 5px;\n  border: 2px solid black;\n  color: black;\n  background: none;\n\n}\n\n.profile:hover {\n  transition: 400ms ease;\n  text-decoration: underline;\n}\n\n.profile h4 {margin: 10px 0;padding: 0;}\n\n.profile p {margin: 0;padding: 0;}\n\n.delete {\n  color: red;\n  border: 2px solid red;\n  position: absolute;\n  padding: 5px 10px;\n  background: none;\n  top: 2px;\n  right: 5px;\n  font-size: 18px;\n}\n\n.profile .delete:hover{\ntransition: 400ms ease;\n-webkit-transform: rotate(1turn);\n        transform: rotate(1turn);\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYm9keS9zaWRlYmFyL3NpZGViYXIuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQixtQkFBbUI7RUFDbkIsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxtQkFBbUI7RUFDbkIsY0FBYztFQUNkLFlBQVk7QUFDZDs7QUFDQSxNQUFNLDJCQUEyQixDQUFDOztBQUVsQztFQUNFLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsYUFBYTtFQUNiLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQix1QkFBdUI7RUFDdkIsa0JBQWtCO0VBQ2xCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0QiwwQkFBMEI7RUFDMUIsWUFBWTs7QUFFZDs7QUFDQTtFQUNFLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEIsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsdUJBQXVCO0VBQ3ZCLFlBQVk7RUFDWixnQkFBZ0I7O0FBRWxCOztBQUNBO0VBQ0Usc0JBQXNCO0VBQ3RCLDBCQUEwQjtBQUM1Qjs7QUFDQSxhQUFhLGNBQWMsQ0FBQyxVQUFVLENBQUM7O0FBQ3ZDLFlBQVksU0FBUyxDQUFDLFVBQVUsQ0FBQzs7QUFFakM7RUFDRSxVQUFVO0VBQ1YscUJBQXFCO0VBQ3JCLGtCQUFrQjtFQUNsQixpQkFBaUI7RUFDakIsZ0JBQWdCO0VBQ2hCLFFBQVE7RUFDUixVQUFVO0VBQ1YsZUFBZTtBQUNqQjs7QUFDQTtBQUNBLHNCQUFzQjtBQUN0QixnQ0FBd0I7UUFBeEIsd0JBQXdCO0FBQ3hCIiwiZmlsZSI6InNyYy9hcHAvYm9keS9zaWRlYmFyL3NpZGViYXIuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNpZGVDb250ZW50e1xuICBmb250LXN0eWxlOiBpdGFsaWM7XG4gIG1heC13aWR0aDogNDAwcHg7XG4gIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gIGJhY2tncm91bmQ6ICNmZmY7XG4gIG1hcmdpbi10b3A6IDUwcHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLnNpZGVDb250ZW50IGgyIHtcbiAgcGFkZGluZzogMTBweCAwIDAgMDtcbiAgZm9udC1zaXplOiAyZW07XG4gIGNvbG9yOiBibGFjaztcbn1cbi5saW5le2JvcmRlcjogMXB4IHNvbGlkIGxpZ2h0Z3JheTt9XG5cbi5zYXZle1xuICBtYXJnaW4tdG9wOiAxNXB4O1xuICBmb250LXN0eWxlOiBpdGFsaWM7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGZvbnQtc2l6ZTogMS41ZW07XG4gIGJhY2tncm91bmQ6IG5vbmU7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgcGFkZGluZzogMTBweCAzMHB4O1xuICBib3JkZXI6IDJweCBzb2xpZCBibGFjaztcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBjb2xvcjogYmxhY2s7XG59XG5cbi5zYXZlOmhvdmVye1xuICB0cmFuc2l0aW9uOiA0MDBtcyBlYXNlO1xuICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcbiAgY29sb3I6IGJsYWNrO1xuXG59XG4ucHJvZmlsZXN7XG4gIHBhZGRpbmctYm90dG9tOiA1cHg7XG59XG5cbi5wcm9maWxlIHtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBtYXJnaW46IDEwcHggNXB4O1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIGZvbnQtc2l6ZTogMS41ZW07XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgYm9yZGVyOiAycHggc29saWQgYmxhY2s7XG4gIGNvbG9yOiBibGFjaztcbiAgYmFja2dyb3VuZDogbm9uZTtcblxufVxuLnByb2ZpbGU6aG92ZXIge1xuICB0cmFuc2l0aW9uOiA0MDBtcyBlYXNlO1xuICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcbn1cbi5wcm9maWxlIGg0IHttYXJnaW46IDEwcHggMDtwYWRkaW5nOiAwO31cbi5wcm9maWxlIHAge21hcmdpbjogMDtwYWRkaW5nOiAwO31cblxuLmRlbGV0ZSB7XG4gIGNvbG9yOiByZWQ7XG4gIGJvcmRlcjogMnB4IHNvbGlkIHJlZDtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBwYWRkaW5nOiA1cHggMTBweDtcbiAgYmFja2dyb3VuZDogbm9uZTtcbiAgdG9wOiAycHg7XG4gIHJpZ2h0OiA1cHg7XG4gIGZvbnQtc2l6ZTogMThweDtcbn1cbi5wcm9maWxlIC5kZWxldGU6aG92ZXJ7XG50cmFuc2l0aW9uOiA0MDBtcyBlYXNlO1xudHJhbnNmb3JtOiByb3RhdGUoMXR1cm4pO1xufVxuXG4iXX0= */"
+module.exports = ".sideContent{\n  font-style: italic;\n  max-width: 400px;\n  border-radius: 10px;\n  background: #fff;\n  margin-top: 50px;\n  text-align: center;\n}\n\n.sideContent h2 {\n  padding: 10px 0 0 0;\n  font-size: 2em;\n  color: black;\n}\n\n.line{border: 1px solid lightgray;}\n\n.save{\n  margin-top: 15px;\n  font-style: italic;\n  outline: none;\n  font-size: 1.5em;\n  background: none;\n  cursor: pointer;\n  padding: 10px 30px;\n  border: 2px solid black;\n  border-radius: 5px;\n  color: black;\n}\n\n.save:hover{\n  transition: 400ms ease;\n  text-decoration: underline;\n  color: black;\n\n}\n\n.profiles{\n  padding-bottom: 5px;\n}\n\n.profile {\n  position: relative;\n  margin: 10px 5px;\n  cursor: pointer;\n  font-size: 1.5em;\n  border-radius: 5px;\n  border: 2px solid black;\n  color: black;\n  background: none;\n\n}\n\n.profile:hover {\n  transition: 400ms ease;\n  text-decoration: underline;\n}\n\n.profile h4 {margin: 10px 0;padding: 0;}\n\n.profile p {margin: 0;padding: 0;}\n\n.delete {\n  color: red;\n  border: 2px solid red;\n  position: absolute;\n  padding: 5px 10px;\n  background: none;\n  top: 2px;\n  right: 5px;\n  font-size: 18px;\n}\n\n.profile .delete:hover{\ntransition: 400ms ease;\n-webkit-transform: rotate(1turn);\n        transform: rotate(1turn);\n}\n\n@media only screen and (min-width : 480px) and (max-width: 1400px) {\n .sideContent{display: none;}\n}\n\n@media only screen and (min-width: 1401px) {\n  .displayProfiles{display: none;}\n}\n\n.displayProfiles{\n  border: none;\n  outline: none;\n  font-style: italic;\n  text-decoration: none;\n  cursor: pointer;\n  padding: 10px 20px;\n  background: none;\n  font-size: 1.5em;\n  color: aqua;\n  float: right;\n  position: absolute;\n  top: 0;\n  left: 1%;\n}\n\n.hideContent{\n  display: none;\n}\n\n.displayProfiles:focus ~ .hideContent,\n.displayProfiles:active ~ .hideContent,\n.hideContent:hover{\n  position: absolute;\n  top: 3%;\n  left: 0;\n  font-style: italic;\n  max-width: 400px;\n  border-radius: 10px;\n  border: 2px solid aqua;\n  background: #CCCCCC;\n  margin-top: 50px;\n  text-align: center;\n  display: block;\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYm9keS9zaWRlYmFyL3NpZGViYXIuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQixtQkFBbUI7RUFDbkIsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxtQkFBbUI7RUFDbkIsY0FBYztFQUNkLFlBQVk7QUFDZDs7QUFDQSxNQUFNLDJCQUEyQixDQUFDOztBQUVsQztFQUNFLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsYUFBYTtFQUNiLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQix1QkFBdUI7RUFDdkIsa0JBQWtCO0VBQ2xCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0QiwwQkFBMEI7RUFDMUIsWUFBWTs7QUFFZDs7QUFDQTtFQUNFLG1CQUFtQjtBQUNyQjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEIsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsdUJBQXVCO0VBQ3ZCLFlBQVk7RUFDWixnQkFBZ0I7O0FBRWxCOztBQUNBO0VBQ0Usc0JBQXNCO0VBQ3RCLDBCQUEwQjtBQUM1Qjs7QUFDQSxhQUFhLGNBQWMsQ0FBQyxVQUFVLENBQUM7O0FBQ3ZDLFlBQVksU0FBUyxDQUFDLFVBQVUsQ0FBQzs7QUFFakM7RUFDRSxVQUFVO0VBQ1YscUJBQXFCO0VBQ3JCLGtCQUFrQjtFQUNsQixpQkFBaUI7RUFDakIsZ0JBQWdCO0VBQ2hCLFFBQVE7RUFDUixVQUFVO0VBQ1YsZUFBZTtBQUNqQjs7QUFDQTtBQUNBLHNCQUFzQjtBQUN0QixnQ0FBd0I7UUFBeEIsd0JBQXdCO0FBQ3hCOztBQUVBO0NBQ0MsYUFBYSxhQUFhLENBQUM7QUFDNUI7O0FBQ0E7RUFDRSxpQkFBaUIsYUFBYSxDQUFDO0FBQ2pDOztBQUVBO0VBQ0UsWUFBWTtFQUNaLGFBQWE7RUFDYixrQkFBa0I7RUFDbEIscUJBQXFCO0VBQ3JCLGVBQWU7RUFDZixrQkFBa0I7RUFDbEIsZ0JBQWdCO0VBQ2hCLGdCQUFnQjtFQUNoQixXQUFXO0VBQ1gsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixNQUFNO0VBQ04sUUFBUTtBQUNWOztBQUVBO0VBQ0UsYUFBYTtBQUNmOztBQUNBOzs7RUFHRSxrQkFBa0I7RUFDbEIsT0FBTztFQUNQLE9BQU87RUFDUCxrQkFBa0I7RUFDbEIsZ0JBQWdCO0VBQ2hCLG1CQUFtQjtFQUNuQixzQkFBc0I7RUFDdEIsbUJBQW1CO0VBQ25CLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsY0FBYztBQUNoQiIsImZpbGUiOiJzcmMvYXBwL2JvZHkvc2lkZWJhci9zaWRlYmFyLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5zaWRlQ29udGVudHtcbiAgZm9udC1zdHlsZTogaXRhbGljO1xuICBtYXgtd2lkdGg6IDQwMHB4O1xuICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xuICBtYXJnaW4tdG9wOiA1MHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5zaWRlQ29udGVudCBoMiB7XG4gIHBhZGRpbmc6IDEwcHggMCAwIDA7XG4gIGZvbnQtc2l6ZTogMmVtO1xuICBjb2xvcjogYmxhY2s7XG59XG4ubGluZXtib3JkZXI6IDFweCBzb2xpZCBsaWdodGdyYXk7fVxuXG4uc2F2ZXtcbiAgbWFyZ2luLXRvcDogMTVweDtcbiAgZm9udC1zdHlsZTogaXRhbGljO1xuICBvdXRsaW5lOiBub25lO1xuICBmb250LXNpemU6IDEuNWVtO1xuICBiYWNrZ3JvdW5kOiBub25lO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHBhZGRpbmc6IDEwcHggMzBweDtcbiAgYm9yZGVyOiAycHggc29saWQgYmxhY2s7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG4uc2F2ZTpob3ZlcntcbiAgdHJhbnNpdGlvbjogNDAwbXMgZWFzZTtcbiAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XG4gIGNvbG9yOiBibGFjaztcblxufVxuLnByb2ZpbGVze1xuICBwYWRkaW5nLWJvdHRvbTogNXB4O1xufVxuXG4ucHJvZmlsZSB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgbWFyZ2luOiAxMHB4IDVweDtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICBmb250LXNpemU6IDEuNWVtO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIGJvcmRlcjogMnB4IHNvbGlkIGJsYWNrO1xuICBjb2xvcjogYmxhY2s7XG4gIGJhY2tncm91bmQ6IG5vbmU7XG5cbn1cbi5wcm9maWxlOmhvdmVyIHtcbiAgdHJhbnNpdGlvbjogNDAwbXMgZWFzZTtcbiAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XG59XG4ucHJvZmlsZSBoNCB7bWFyZ2luOiAxMHB4IDA7cGFkZGluZzogMDt9XG4ucHJvZmlsZSBwIHttYXJnaW46IDA7cGFkZGluZzogMDt9XG5cbi5kZWxldGUge1xuICBjb2xvcjogcmVkO1xuICBib3JkZXI6IDJweCBzb2xpZCByZWQ7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcGFkZGluZzogNXB4IDEwcHg7XG4gIGJhY2tncm91bmQ6IG5vbmU7XG4gIHRvcDogMnB4O1xuICByaWdodDogNXB4O1xuICBmb250LXNpemU6IDE4cHg7XG59XG4ucHJvZmlsZSAuZGVsZXRlOmhvdmVye1xudHJhbnNpdGlvbjogNDAwbXMgZWFzZTtcbnRyYW5zZm9ybTogcm90YXRlKDF0dXJuKTtcbn1cblxuQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWluLXdpZHRoIDogNDgwcHgpIGFuZCAobWF4LXdpZHRoOiAxNDAwcHgpIHtcbiAuc2lkZUNvbnRlbnR7ZGlzcGxheTogbm9uZTt9XG59XG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtaW4td2lkdGg6IDE0MDFweCkge1xuICAuZGlzcGxheVByb2ZpbGVze2Rpc3BsYXk6IG5vbmU7fVxufVxuXG4uZGlzcGxheVByb2ZpbGVze1xuICBib3JkZXI6IG5vbmU7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHBhZGRpbmc6IDEwcHggMjBweDtcbiAgYmFja2dyb3VuZDogbm9uZTtcbiAgZm9udC1zaXplOiAxLjVlbTtcbiAgY29sb3I6IGFxdWE7XG4gIGZsb2F0OiByaWdodDtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0b3A6IDA7XG4gIGxlZnQ6IDElO1xufVxuXG4uaGlkZUNvbnRlbnR7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG4uZGlzcGxheVByb2ZpbGVzOmZvY3VzIH4gLmhpZGVDb250ZW50LFxuLmRpc3BsYXlQcm9maWxlczphY3RpdmUgfiAuaGlkZUNvbnRlbnQsXG4uaGlkZUNvbnRlbnQ6aG92ZXJ7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdG9wOiAzJTtcbiAgbGVmdDogMDtcbiAgZm9udC1zdHlsZTogaXRhbGljO1xuICBtYXgtd2lkdGg6IDQwMHB4O1xuICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICBib3JkZXI6IDJweCBzb2xpZCBhcXVhO1xuICBiYWNrZ3JvdW5kOiAjQ0NDQ0NDO1xuICBtYXJnaW4tdG9wOiA1MHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGRpc3BsYXk6IGJsb2NrO1xufVxuXG4iXX0= */"
 
 /***/ }),
 
@@ -697,13 +772,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignInComponent", function() { return SignInComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_app_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/service.service */ "./src/app/service.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+
+
 
 
 let SignInComponent = class SignInComponent {
-    constructor() { }
+    constructor(serviceService, formBuilder) {
+        this.serviceService = serviceService;
+        this.formBuilder = formBuilder;
+        this.checkoutForm = this.formBuilder.group({
+            EmailAddress: '',
+            Password: '',
+        });
+    }
+    callServerForSignIn(data) {
+        console.log('data: ', data);
+        this.serviceService.callServerForSignIn(data);
+    }
     ngOnInit() {
     }
 };
+SignInComponent.ctorParameters = () => [
+    { type: src_app_service_service__WEBPACK_IMPORTED_MODULE_2__["ServiceService"] },
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"] }
+];
 SignInComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-sign-in',
@@ -715,12 +809,12 @@ SignInComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             <div class="line"></div>
             </div>
         <div class="formContent">
-            <form action="" class="Form">
-                <input type="email" class="formControl" placeholder="E-mail">
-                <input type="password" class="formControl" placeholder="Password">
+            <form action="" class="Form" [formGroup]="checkoutForm">
+                <input type="email" class="formControl" placeholder="E-mail" formControlName="EmailAddress">
+                <input type="password" class="formControl" placeholder="Password" formControlName="Password">
             </form>
             <div class="buttonContent">
-                <button class="confirmButton">Confirm</button>
+                <button class="confirmButton" type="submit" (click)="callServerForSignIn(checkoutForm.value)">Confirm</button>
             </div>
         </div>
         </div>
@@ -756,13 +850,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SignUpComponent", function() { return SignUpComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var src_app_service_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/service.service */ "./src/app/service.service.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+
+
 
 
 let SignUpComponent = class SignUpComponent {
-    constructor() { }
-    ngOnInit() {
+    constructor(serviceService, formBuilder) {
+        this.serviceService = serviceService;
+        this.formBuilder = formBuilder;
+        this.checkoutForm = this.formBuilder.group({
+            nickname: '',
+            EmailAddress: '',
+            Password: '',
+        });
     }
+    callServerForSignUp(data) {
+        // console.log('data: ', data);
+        this.serviceService.callServerForSignUp(data);
+    }
+    ngOnInit() { }
 };
+SignUpComponent.ctorParameters = () => [
+    { type: src_app_service_service__WEBPACK_IMPORTED_MODULE_2__["ServiceService"] },
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormBuilder"] }
+];
 SignUpComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: 'app-sign-up',
@@ -774,13 +887,14 @@ SignUpComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
                 <div class="line"></div>
             </div>
             <div class="formContent">
-                <form action="" class="Form">
-                    <input type="text" class="formControl" placeholder="Nickname">
-                    <input type="email" class="formControl" placeholder="E-mail">
-                    <input type="password" class="formControl" placeholder="Password">
+                <form [formGroup]="checkoutForm"  class="Form">
+                    <input type="text" class="formControl"  formControlName="nickname" placeholder="Nickname">
+                    <input type="email" class="formControl"  formControlName="EmailAddress" placeholder="E-mail">
+                    <input type="password" class="formControl"  formControlName="Password" placeholder="Password">
                 </form>
                 <div class="buttonContent">
-                    <button class="confirmButton">Confirm</button>
+                    <button routerLink="/userPage"
+                            class="confirmButton" type="submit" (click)="callServerForSignUp(checkoutForm.value)">Confirm</button>
                 </div>
             </div>
         </div>
@@ -788,6 +902,54 @@ SignUpComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [__webpack_require__(/*! ./sign-up.component.css */ "./src/app/body/sign-up/sign-up.component.css")]
     })
 ], SignUpComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/body/user-page/user-page.component.css":
+/*!********************************************************!*\
+  !*** ./src/app/body/user-page/user-page.component.css ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".container{\n    margin-top: 150px;\n}\n.content{\n    max-width: 600px;\n    margin: 0 auto;\n    border-radius: 10px;\n    background: #fff;\n    text-align: center;\n}\nh1{\n    font-size: 2em;\n    font-style: italic;\n}\n.logout{\n    margin-bottom: 30px;\n    text-decoration: none;\n    cursor: pointer;\n    padding: 10px 20px;\n    background: none;\n    font-size: 1.5em;\n    color: aqua;\n    border: 2px solid aqua;\n    border-radius: 5px;\n}\n.logout:hover{\n    transition: 400ms ease;\n    color: gold;\n    border: 2px solid gold;\n    text-decoration: underline;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYm9keS91c2VyLXBhZ2UvdXNlci1wYWdlLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxpQkFBaUI7QUFDckI7QUFDQTtJQUNJLGdCQUFnQjtJQUNoQixjQUFjO0lBQ2QsbUJBQW1CO0lBQ25CLGdCQUFnQjtJQUNoQixrQkFBa0I7QUFDdEI7QUFDQTtJQUNJLGNBQWM7SUFDZCxrQkFBa0I7QUFDdEI7QUFFQTtJQUNJLG1CQUFtQjtJQUNuQixxQkFBcUI7SUFDckIsZUFBZTtJQUNmLGtCQUFrQjtJQUNsQixnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLFdBQVc7SUFDWCxzQkFBc0I7SUFDdEIsa0JBQWtCO0FBQ3RCO0FBRUE7SUFDSSxzQkFBc0I7SUFDdEIsV0FBVztJQUNYLHNCQUFzQjtJQUN0QiwwQkFBMEI7QUFDOUIiLCJmaWxlIjoic3JjL2FwcC9ib2R5L3VzZXItcGFnZS91c2VyLXBhZ2UuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXJ7XG4gICAgbWFyZ2luLXRvcDogMTUwcHg7XG59XG4uY29udGVudHtcbiAgICBtYXgtd2lkdGg6IDYwMHB4O1xuICAgIG1hcmdpbjogMCBhdXRvO1xuICAgIGJvcmRlci1yYWRpdXM6IDEwcHg7XG4gICAgYmFja2dyb3VuZDogI2ZmZjtcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5oMXtcbiAgICBmb250LXNpemU6IDJlbTtcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XG59XG5cbi5sb2dvdXR7XG4gICAgbWFyZ2luLWJvdHRvbTogMzBweDtcbiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIHBhZGRpbmc6IDEwcHggMjBweDtcbiAgICBiYWNrZ3JvdW5kOiBub25lO1xuICAgIGZvbnQtc2l6ZTogMS41ZW07XG4gICAgY29sb3I6IGFxdWE7XG4gICAgYm9yZGVyOiAycHggc29saWQgYXF1YTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG59XG5cbi5sb2dvdXQ6aG92ZXJ7XG4gICAgdHJhbnNpdGlvbjogNDAwbXMgZWFzZTtcbiAgICBjb2xvcjogZ29sZDtcbiAgICBib3JkZXI6IDJweCBzb2xpZCBnb2xkO1xuICAgIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufSJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/body/user-page/user-page.component.ts":
+/*!*******************************************************!*\
+  !*** ./src/app/body/user-page/user-page.component.ts ***!
+  \*******************************************************/
+/*! exports provided: UserPageComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserPageComponent", function() { return UserPageComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+
+
+let UserPageComponent = class UserPageComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+};
+UserPageComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-user-page',
+        template: __webpack_require__(/*! raw-loader!./user-page.component.html */ "./node_modules/raw-loader/index.js!./src/app/body/user-page/user-page.component.html"),
+        template: `<div class="container">
+        <div class="content">
+            <h1>Hello {{nickname}}</h1>
+            <button routerLink="/register" routerLinkActive="active" class="logout">Log Out</button>
+        </div>
+    </div>`,
+        styles: [__webpack_require__(/*! ./user-page.component.css */ "./src/app/body/user-page/user-page.component.css")]
+    })
+], UserPageComponent);
 
 
 
@@ -899,7 +1061,7 @@ WeatherListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".weather-list {\n\n  margin: 20px auto;\n  width: 40%;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYm9keS93ZWF0aGVyL3dlYXRoZXItbGlzdC93ZWF0aGVyLWxpc3QuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztFQUVFLGlCQUFpQjtFQUNqQixVQUFVO0FBQ1oiLCJmaWxlIjoic3JjL2FwcC9ib2R5L3dlYXRoZXIvd2VhdGhlci1saXN0L3dlYXRoZXItbGlzdC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIud2VhdGhlci1saXN0IHtcblxuICBtYXJnaW46IDIwcHggYXV0bztcbiAgd2lkdGg6IDQwJTtcbn1cbiJdfQ== */"
+module.exports = ".weather-list {\n\n  margin: 20px auto;\n  max-width: 600px;\n}\n@media only screen and (min-width : 480px) and (max-width: 767px) {\n  .weather-list{max-width: 450px;}\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYm9keS93ZWF0aGVyL3dlYXRoZXItbGlzdC93ZWF0aGVyLWxpc3QuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztFQUVFLGlCQUFpQjtFQUNqQixnQkFBZ0I7QUFDbEI7QUFDQTtFQUNFLGNBQWMsZ0JBQWdCLENBQUM7QUFDakMiLCJmaWxlIjoic3JjL2FwcC9ib2R5L3dlYXRoZXIvd2VhdGhlci1saXN0L3dlYXRoZXItbGlzdC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIud2VhdGhlci1saXN0IHtcblxuICBtYXJnaW46IDIwcHggYXV0bztcbiAgbWF4LXdpZHRoOiA2MDBweDtcbn1cbkBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1pbi13aWR0aCA6IDQ4MHB4KSBhbmQgKG1heC13aWR0aDogNzY3cHgpIHtcbiAgLndlYXRoZXItbGlzdHttYXgtd2lkdGg6IDQ1MHB4O31cbn0iXX0= */"
 
 /***/ }),
 
@@ -1008,7 +1170,7 @@ WeatherSearchComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".weather-search {text-align: center;}\n\n.weatherForm{\n  max-width: 600px;\n  min-height: 250px;\n  margin: 0 auto;\n  border-radius: 10px;\n  background: #fff;\n}\n\n.weatherInput{\n  font-style: italic;\n  outline: none;\n  font-size: 1.5em;\n  width: 80%;\n  border: none;\n  margin: 40px auto;\n  border-radius: 20px;\n  background: lightgray;\n  padding: 15px 0 15px 10px;\n}\n\n.weatherButton{\n  font-style: italic;\n  text-decoration: none;\n  outline: none;\n  font-size: 2em;\n  background: none;\n  cursor: pointer;\n  padding: 10px 30px;\n  margin: 20px 20px;\n  position: relative;\n  border-radius: 5px;\n  color: black;\n  border: 1px solid black;\n}\n\n.add:hover{\n  transition: 200ms ease;\n  text-decoration: underline;\n}\n\n.del:hover{\n  transition: 200ms ease;\n  text-decoration: underline;\n}\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYm9keS93ZWF0aGVyL3dlYXRoZXItc2VhcmNoL3dlYXRoZXItc2VhcmNoLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxpQkFBaUIsa0JBQWtCLENBQUM7O0FBRXBDO0VBQ0UsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsbUJBQW1CO0VBQ25CLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixhQUFhO0VBQ2IsZ0JBQWdCO0VBQ2hCLFVBQVU7RUFDVixZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLG1CQUFtQjtFQUNuQixxQkFBcUI7RUFDckIseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLHFCQUFxQjtFQUNyQixhQUFhO0VBQ2IsY0FBYztFQUNkLGdCQUFnQjtFQUNoQixlQUFlO0VBQ2Ysa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLFlBQVk7RUFDWix1QkFBdUI7QUFDekI7O0FBQ0E7RUFDRSxzQkFBc0I7RUFDdEIsMEJBQTBCO0FBQzVCOztBQUNBO0VBQ0Usc0JBQXNCO0VBQ3RCLDBCQUEwQjtBQUM1QiIsImZpbGUiOiJzcmMvYXBwL2JvZHkvd2VhdGhlci93ZWF0aGVyLXNlYXJjaC93ZWF0aGVyLXNlYXJjaC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIud2VhdGhlci1zZWFyY2gge3RleHQtYWxpZ246IGNlbnRlcjt9XG5cbi53ZWF0aGVyRm9ybXtcbiAgbWF4LXdpZHRoOiA2MDBweDtcbiAgbWluLWhlaWdodDogMjUwcHg7XG4gIG1hcmdpbjogMCBhdXRvO1xuICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICBiYWNrZ3JvdW5kOiAjZmZmO1xufVxuXG4ud2VhdGhlcklucHV0e1xuICBmb250LXN0eWxlOiBpdGFsaWM7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGZvbnQtc2l6ZTogMS41ZW07XG4gIHdpZHRoOiA4MCU7XG4gIGJvcmRlcjogbm9uZTtcbiAgbWFyZ2luOiA0MHB4IGF1dG87XG4gIGJvcmRlci1yYWRpdXM6IDIwcHg7XG4gIGJhY2tncm91bmQ6IGxpZ2h0Z3JheTtcbiAgcGFkZGluZzogMTVweCAwIDE1cHggMTBweDtcbn1cblxuLndlYXRoZXJCdXR0b257XG4gIGZvbnQtc3R5bGU6IGl0YWxpYztcbiAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICBvdXRsaW5lOiBub25lO1xuICBmb250LXNpemU6IDJlbTtcbiAgYmFja2dyb3VuZDogbm9uZTtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICBwYWRkaW5nOiAxMHB4IDMwcHg7XG4gIG1hcmdpbjogMjBweCAyMHB4O1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgY29sb3I6IGJsYWNrO1xuICBib3JkZXI6IDFweCBzb2xpZCBibGFjaztcbn1cbi5hZGQ6aG92ZXJ7XG4gIHRyYW5zaXRpb246IDIwMG1zIGVhc2U7XG4gIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufVxuLmRlbDpob3ZlcntcbiAgdHJhbnNpdGlvbjogMjAwbXMgZWFzZTtcbiAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XG59XG5cbiJdfQ== */"
+module.exports = ".weather-search {text-align: center;}\n\n.weatherForm{\n  max-width: 600px;\n  min-height: 250px;\n  margin: 0 auto;\n  border-radius: 10px;\n  background: #fff;\n}\n\n.weatherInput{\n  font-style: italic;\n  outline: none;\n  font-size: 1.5em;\n  width: 80%;\n  border: none;\n  margin: 40px auto;\n  border-radius: 20px;\n  background: lightgray;\n  padding: 15px 0 15px 10px;\n}\n\n.weatherButton{\n  font-style: italic;\n  text-decoration: none;\n  outline: none;\n  font-size: 2em;\n  background: none;\n  cursor: pointer;\n  padding: 10px 30px;\n  margin: 20px 20px;\n  position: relative;\n  border-radius: 5px;\n  color: black;\n  border: 1px solid black;\n}\n\n.add:hover{\n  transition: 200ms ease;\n  text-decoration: underline;\n}\n\n.del:hover{\n  transition: 200ms ease;\n  text-decoration: underline;\n}\n\n@media only screen and (min-width : 480px) and (max-width: 767px) {\n .weatherForm{max-width: 450px;}\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYm9keS93ZWF0aGVyL3dlYXRoZXItc2VhcmNoL3dlYXRoZXItc2VhcmNoLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxpQkFBaUIsa0JBQWtCLENBQUM7O0FBRXBDO0VBQ0UsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtFQUNqQixjQUFjO0VBQ2QsbUJBQW1CO0VBQ25CLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixhQUFhO0VBQ2IsZ0JBQWdCO0VBQ2hCLFVBQVU7RUFDVixZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLG1CQUFtQjtFQUNuQixxQkFBcUI7RUFDckIseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0Usa0JBQWtCO0VBQ2xCLHFCQUFxQjtFQUNyQixhQUFhO0VBQ2IsY0FBYztFQUNkLGdCQUFnQjtFQUNoQixlQUFlO0VBQ2Ysa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLFlBQVk7RUFDWix1QkFBdUI7QUFDekI7O0FBQ0E7RUFDRSxzQkFBc0I7RUFDdEIsMEJBQTBCO0FBQzVCOztBQUNBO0VBQ0Usc0JBQXNCO0VBQ3RCLDBCQUEwQjtBQUM1Qjs7QUFFQTtDQUNDLGFBQWEsZ0JBQWdCLENBQUM7QUFDL0IiLCJmaWxlIjoic3JjL2FwcC9ib2R5L3dlYXRoZXIvd2VhdGhlci1zZWFyY2gvd2VhdGhlci1zZWFyY2guY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLndlYXRoZXItc2VhcmNoIHt0ZXh0LWFsaWduOiBjZW50ZXI7fVxuXG4ud2VhdGhlckZvcm17XG4gIG1heC13aWR0aDogNjAwcHg7XG4gIG1pbi1oZWlnaHQ6IDI1MHB4O1xuICBtYXJnaW46IDAgYXV0bztcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgYmFja2dyb3VuZDogI2ZmZjtcbn1cblxuLndlYXRoZXJJbnB1dHtcbiAgZm9udC1zdHlsZTogaXRhbGljO1xuICBvdXRsaW5lOiBub25lO1xuICBmb250LXNpemU6IDEuNWVtO1xuICB3aWR0aDogODAlO1xuICBib3JkZXI6IG5vbmU7XG4gIG1hcmdpbjogNDBweCBhdXRvO1xuICBib3JkZXItcmFkaXVzOiAyMHB4O1xuICBiYWNrZ3JvdW5kOiBsaWdodGdyYXk7XG4gIHBhZGRpbmc6IDE1cHggMCAxNXB4IDEwcHg7XG59XG5cbi53ZWF0aGVyQnV0dG9ue1xuICBmb250LXN0eWxlOiBpdGFsaWM7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgb3V0bGluZTogbm9uZTtcbiAgZm9udC1zaXplOiAyZW07XG4gIGJhY2tncm91bmQ6IG5vbmU7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgcGFkZGluZzogMTBweCAzMHB4O1xuICBtYXJnaW46IDIwcHggMjBweDtcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xuICBib3JkZXItcmFkaXVzOiA1cHg7XG4gIGNvbG9yOiBibGFjaztcbiAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XG59XG4uYWRkOmhvdmVye1xuICB0cmFuc2l0aW9uOiAyMDBtcyBlYXNlO1xuICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcbn1cbi5kZWw6aG92ZXJ7XG4gIHRyYW5zaXRpb246IDIwMG1zIGVhc2U7XG4gIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufVxuXG5AbWVkaWEgb25seSBzY3JlZW4gYW5kIChtaW4td2lkdGggOiA0ODBweCkgYW5kIChtYXgtd2lkdGg6IDc2N3B4KSB7XG4gLndlYXRoZXJGb3Jte21heC13aWR0aDogNDUwcHg7fVxufVxuIl19 */"
 
 /***/ }),
 
@@ -1087,7 +1249,7 @@ FooterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".bodyn{\n    display: inline-block;\n    width: 100%;\n    background-color: #1D1B26;\n    font-style: italic;\n}\n.sign{\n    text-decoration: none;\n    cursor: pointer;\n    padding: 10px 20px;\n    background: none;\n    font-size: 1.5em;\n    color: aqua;\n    float: right;\n}\n.sign:hover{\n    transition: 400ms ease;\n    color: gold;\n    text-decoration: underline;\n}\n/**/\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0kscUJBQXFCO0lBQ3JCLFdBQVc7SUFDWCx5QkFBeUI7SUFDekIsa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxxQkFBcUI7SUFDckIsZUFBZTtJQUNmLGtCQUFrQjtJQUNsQixnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLFdBQVc7SUFDWCxZQUFZO0FBQ2hCO0FBRUE7SUFDSSxzQkFBc0I7SUFDdEIsV0FBVztJQUNYLDBCQUEwQjtBQUM5QjtBQUVBLEdBQUciLCJmaWxlIjoic3JjL2FwcC9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYm9keW57XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMxRDFCMjY7XG4gICAgZm9udC1zdHlsZTogaXRhbGljO1xufVxuLnNpZ257XG4gICAgdGV4dC1kZWNvcmF0aW9uOiBub25lO1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBwYWRkaW5nOiAxMHB4IDIwcHg7XG4gICAgYmFja2dyb3VuZDogbm9uZTtcbiAgICBmb250LXNpemU6IDEuNWVtO1xuICAgIGNvbG9yOiBhcXVhO1xuICAgIGZsb2F0OiByaWdodDtcbn1cblxuLnNpZ246aG92ZXJ7XG4gICAgdHJhbnNpdGlvbjogNDAwbXMgZWFzZTtcbiAgICBjb2xvcjogZ29sZDtcbiAgICB0ZXh0LWRlY29yYXRpb246IHVuZGVybGluZTtcbn1cblxuLyoqL1xuIl19 */"
+module.exports = ".bodyn{\n    display: inline-block;\n    width: 100%;\n    background-color: #1D1B26;\n    font-style: italic;\n}\n.sign{\n    text-decoration: none;\n    cursor: pointer;\n    padding: 10px 20px;\n    background: none;\n    font-size: 1.5em;\n    color: aqua;\n    float: right;\n}\n.sign:hover{\n    transition: 400ms ease;\n    color: gold;\n    text-decoration: underline;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0kscUJBQXFCO0lBQ3JCLFdBQVc7SUFDWCx5QkFBeUI7SUFDekIsa0JBQWtCO0FBQ3RCO0FBQ0E7SUFDSSxxQkFBcUI7SUFDckIsZUFBZTtJQUNmLGtCQUFrQjtJQUNsQixnQkFBZ0I7SUFDaEIsZ0JBQWdCO0lBQ2hCLFdBQVc7SUFDWCxZQUFZO0FBQ2hCO0FBRUE7SUFDSSxzQkFBc0I7SUFDdEIsV0FBVztJQUNYLDBCQUEwQjtBQUM5QiIsImZpbGUiOiJzcmMvYXBwL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5ib2R5bntcbiAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgd2lkdGg6IDEwMCU7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzFEMUIyNjtcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XG59XG4uc2lnbntcbiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIHBhZGRpbmc6IDEwcHggMjBweDtcbiAgICBiYWNrZ3JvdW5kOiBub25lO1xuICAgIGZvbnQtc2l6ZTogMS41ZW07XG4gICAgY29sb3I6IGFxdWE7XG4gICAgZmxvYXQ6IHJpZ2h0O1xufVxuXG4uc2lnbjpob3ZlcntcbiAgICB0cmFuc2l0aW9uOiA0MDBtcyBlYXNlO1xuICAgIGNvbG9yOiBnb2xkO1xuICAgIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufVxuIl19 */"
 
 /***/ }),
 
@@ -1144,6 +1306,66 @@ class Init {
     }
 }
 const WEATHER_ITEMS = [];
+
+
+/***/ }),
+
+/***/ "./src/app/service.service.ts":
+/*!************************************!*\
+  !*** ./src/app/service.service.ts ***!
+  \************************************/
+/*! exports provided: ServiceService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ServiceService", function() { return ServiceService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let ServiceService = class ServiceService {
+    // user = {id: 1, name: 'Hello'};
+    constructor(http) {
+        this.http = http;
+    }
+    getHeaders() {
+        return new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]()
+            .set('Authorization', 'my-auth-token')
+            .set('Content-Type', 'application/json');
+    }
+    callServerForSignIn(userData) {
+        console.log('callServerForSignIn data: ', userData);
+        const headers = this.getHeaders();
+        this.http.post('http://127.0.0.1:3000/api/login', JSON.stringify(userData), {
+            headers: headers
+        })
+            .subscribe(data => {
+            console.log(data);
+        });
+    }
+    callServerForSignUp(userData) {
+        console.log('callServerForSignUp data: ', userData);
+        const headers = this.getHeaders();
+        this.http.post('http://127.0.0.1:3000/api/register', JSON.stringify(userData), {
+            headers: headers
+        })
+            .subscribe(data => {
+            console.log("data needs be here", data);
+        });
+    }
+};
+ServiceService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+ServiceService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], ServiceService);
+
 
 
 /***/ }),

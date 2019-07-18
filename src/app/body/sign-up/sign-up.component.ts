@@ -27,7 +27,6 @@ import { FormBuilder } from '@angular/forms';
     </div>`,
 })
 export class SignUpComponent implements OnInit {
-    items;
     checkoutForm;
 
   constructor(
@@ -42,7 +41,7 @@ export class SignUpComponent implements OnInit {
   }
 
     callServerForSignUp(data) {
-        console.log('data: ', data);
+        // console.log('data: ', data);
         this.serviceService.callServerForSignUp(data);
     }
 
