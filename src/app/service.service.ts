@@ -18,23 +18,19 @@ export class ServiceService {
     callServerForSignIn(userData) {
         console.log('callServerForSignIn data: ', userData);
         const headers = this.getHeaders();
-        this.http.post('http://127.0.0.1:3000/api/login', JSON.stringify(userData), {
+        return this.http.post('http://127.0.0.1:3000/api/login', JSON.stringify(userData), {
             headers: headers
-        })
-            .subscribe(data => {
-                console.log(data);
-            });
+        });
+
     }
 
     callServerForSignUp(userData) {
         console.log('callServerForSignUp data: ', userData);
         const headers = this.getHeaders();
 
-        this.http.post('http://127.0.0.1:3000/api/register', JSON.stringify(userData), {
+        return this.http.post('http://127.0.0.1:3000/api/register', JSON.stringify(userData), {
         headers: headers
-        })
-            .subscribe(data => {
-                console.log("data needs be here", data);
-            });
+        });
+
     }
 }
