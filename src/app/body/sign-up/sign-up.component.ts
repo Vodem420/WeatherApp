@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {ServiceService} from 'src/app/service.service';
-import {FormBuilder, FormControl} from '@angular/forms';
-import {FormGroup} from '@angular/forms';
-import {Validator} from '@angular/forms';
+import {FormBuilder} from '@angular/forms';
+// import {FormGroup} from '@angular/forms';
+import {User} from '../user';
 
 @Component({
     selector: 'app-sign-up',
@@ -16,68 +16,70 @@ import {Validator} from '@angular/forms';
                     <div class="line"></div>
                 </div>
                 <div class="formContent">
-                    <form [formGroup]="clientForm" class="Form" form="validate(clientForm.value, clientForm.valid)">
-                        <input formControlName="name" minlength="4"
-                               type="text" class="formControl" placeholder="Nickname"
-                               required pattern="[a-zA-Z_]+@[a-zA-Z_]+?\\.[a-zA-Z]{2,3}">
-                        <div *ngIf="submitted && userForm.name.errors" class="alert alert-danger">
-                            name not specified
-                        </div>
-                        <input formControlName="email"
-                               type="email" name="email" class="formControl" placeholder="E-mail">
-                        <div *ngIf="submitted && userForm.email.errors" class="alert alert-danger">
-                            incorrect email
-                        </div>
-                        <input formControlName="password" required pattern="[a-zA-Z_]+@[a-zA-Z_]+?\\.[a-zA-Z]{2,3}"
-                               type="password" class="formControl" placeholder="Password">
-                        <div *ngIf="submitted && userForm.password.errors" class="alert alert-danger">
-                            incorrect password
+                    <form #frm="ngForm" class="Form" (ngSubmit)="callServerForSignUp(frm)">
+                        <div class="form-group">
+                            <input
+                                    #nameUser="ngModel" minlength="3" name="name" ngModel required pattern="^[a-zA-Z]+$"
+                                   type="text" class="formControl" placeholder="Nickname">
+                            <div *ngIf="nameUser?.touched" >
+                                <div *ngIf="nameUser.errors?.required" class="alert">
+                                    Name is required!
+                                </div>
+                                <div *ngIf="nameUser.errors?.pattern" class="alert">
+                                    Invalid Name!
+                                </div>
+                            </div>
+                            <input #emailUser="ngModel" name="email" placeholder="E-mail" class="formControl" ngModel required
+                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$">
+                            <div *ngIf="emailUser?.touched">
+                                <div *ngIf="emailUser.errors?.required" class="alert">
+                                    email is required!
+                                </div>
+                                <div *ngIf="emailUser.errors?.pattern" class="alert">
+                                    Invalid email!
+                                </div>
+                            </div>
+                            <input #passwordUser="ngModel" name="password"
+                                   type="password" class="formControl" placeholder="Password" ngModel required
+                                  pattern="(?=^.{6,}$)((?=.*\\d)|(?=.*\\W+))(?![.\\n])(?=.*[A-Z])(?=.*[a-z]).*">
+                            <div *ngIf="passwordUser?.touched">
+                                <div *ngIf="passwordUser.errors?.required" class="alert">
+                                    password is required!
+                                </div>
+                                <div *ngIf="passwordUser.errors?.pattern" class="alert">
+                                    Invalid password!
+                                </div>
+                            </div>
                         </div>
                     </form>
                     <div class="buttonContent">
-                        <!-- [disabled]="clientForm.invalid || clientForm.invalid || clientForm.invalid" -->
                         <button routerLink="/userPage" class="confirmButton"
-                                 type="submit">Confirm
+                                type="submit" [disabled]="frm.invalid">Confirm
                         </button>
                     </div>
                 </div>
             </div>
-        </div>`,
+            {{frm.value | json}}
+        </div>
+        `,
 })
 export class SignUpComponent implements OnInit {
-    authForm: FormGroup;
-    name: any;
-    email: any;
-    password: any;
-    user: any;
-    userForm: any;
+    userList: User[] = [];
+    // authForm: FormGroup;
+    // name: any;
+    // email: any;
+    // password: any;
+    // user: any;
 
     submitted: false; // boolean
 
-    get userForm() {
-        return this.authForm.controls;
-    }
-
-    constructor(private formGroup: FormGroup,
-                private serviceService: ServiceService,
-                private formBuilder: FormBuilder,
-                ) {
-    }
-    // validate() {
-    //
+    // get userForm() {
+    //     return this.authForm.controls;
     // }
 
-    // clientForm: FormGroup = new FormGroup({email: new FormControl()});
-    // clientForm: FormGroup = new FormGroup({password: new FormControl()});
-    // constructor(private serviceService: ServiceService,
-    //             private formBuilder: FormBuilder,) {
-    // }
-
-    // this.checkoutForm = this.formBuilder.group({
-    //     nickname: '',
-    //     EmailAddress: '',
-    //     Password: '',
-    // });
+    constructor(  private serviceService: ServiceService, private formBuilder: FormBuilder,
+    ) {
+    }
 
     callServerForSignUp(data) {
         // console.log('data: ', data);
@@ -89,10 +91,5 @@ export class SignUpComponent implements OnInit {
 
 
     ngOnInit() {
-        this.authForm = this.formGroup.group({
-            name: ['', Validator.required()],
-            email: ['', Validator.email()],
-            password: ['', Validator.required],
-        });
     }
 }
