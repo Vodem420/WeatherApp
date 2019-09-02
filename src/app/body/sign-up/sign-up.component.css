@@ -52,6 +52,9 @@
     background: pink;
     padding: 10px 0 10px 10px;
 }
+.json{
+    display: none;
+}
 
 @media only screen and (min-width : 480px) and (max-width: 767px) {
     .content{ max-width: 400px;}

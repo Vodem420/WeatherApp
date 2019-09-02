@@ -59,7 +59,7 @@ import {User} from '../user';
                     </div>
                 </div>
             </div>
-            {{frm.value | json}}
+            <div class="json">{{frm.value | json}}</div>
         </div>
         `,
 })
